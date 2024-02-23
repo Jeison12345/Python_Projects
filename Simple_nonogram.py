@@ -11,3 +11,16 @@ Example:
     [0, 0, 0, 0, 0, 0] => []
 """
 
+def nonogram_sequence(array):
+    counter = 0
+    sequence = []
+    for item in array:
+        if item == 1:
+            counter += 1
+        else:
+            sequence.append(counter)
+            counter = 0
+    if counter:
+        sequence.append(counter)
+        return counter
+nonogram_sequence([1, 1, 1, 0, 1, 1])
