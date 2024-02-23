@@ -22,5 +22,5 @@ def nonogram_sequence(array):
             counter = 0
     if counter:
         sequence.append(counter)
-        return counter
-nonogram_sequence([1, 1, 1, 0, 1, 1])
+        return sequence
+print(nonogram_sequence([1, 1, 1, 0, 1, 1]))
